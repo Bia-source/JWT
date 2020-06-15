@@ -7,7 +7,7 @@ class authController{
     public async criarUser(req:Request, res:Response){
         try {
             const user = await User.create(req.body);
-            const token = jwt.sing({user: user.id})
+            const token = jwt.sing({user: user.id});
             user.senha = undefined;
             return res.json({user, token});
         } catch (error) {
