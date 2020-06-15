@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "jwt",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/Bia-source/JWT.git",
@@ -8,6 +8,7 @@
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.18",
     "nodemon": "^2.0.4",
     "ts-node": "^8.10.2",
@@ -16,9 +17,5 @@
   "scripts": {
     "start": "node ./src/index.ts",
     "dev": "nodemon ./src/index.ts"
-  },
-  "engines": {
-    "node": "12.16.1",
-    "yarn": "1.22.4 "
   }
 }
